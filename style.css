@@ -1,82 +1,217 @@
 body
 {
-    background:gray;
+    background-color:black;
 }
 
 
 ul
-
 {
-    list-style:none;
-    margin:0;   
-    padding: 0%;
+    position: absolute;
+    left:O;
+    top:2vw;
+    list-style: none;
+    padding:0;
+  
+   
+    border-radius:3%
+
+
+
+
 }
+
+li
+{
+    display:flex;
+    background-color: rgba(255,255,255,0.3);
+
+}
+
+
 
 
 li{
-    display: flex;
-}
 
-div.icone
+    height: 51px;
+    width: 51px;
 
-{
-    background-color: black;
-    z-index:0;
-    width: 65px;
-    height: 65px;
+
 }
 
 
-div.icone:hover
-
+li.cameleon
 {
-    background-color: white;
-    border:1px solid rgba(255, 255, 255, 0.2);
+    border-radius:20% 20% 0 0 ;
+background-image: url(img/cameleon.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
 
-    width: 65px;
-    height: 65px;
+background-position: center;
+}
+li.Chameau
+{
+background-image: url(img/chameau.png);
+background-repeat: no-repeat;
+
+background-size: 35px 35px;
+
+background-position: center;
+}
+li.Crocodile
+{
+background-image: url(img/crocodile.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
+
+background-position: center;
+}
+li.Elephant
+{
+background-image: url(img/elephant.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
+
+background-position: center;
+}
+li.Ours
+{
+background-image: url(img/ours.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
+
+background-position: center;
+}
+li.canard
+{
+background-image: url(img/canard.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
+
+background-position: center;
 }
 
-div.icone img
-
+li.Panda
 {
-    width:100%;
+background-image: url(img/panda.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-size: 35px 35px;
 
-    height: 100%;
+background-position: center;
 
+border-radius:0 0 20% 20% ;
+}
+
+li:hover{
+    background-color: red;
 }
 
 
 div.texte
 {
-
-    z-index:0;
-    background-color:yellow;
-    border:1px solid red;
-    width: 10%;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-    transform:translate(-10vw,0px);
-    
-
+padding:0;
+margin:0;
 }
 
-div.texte:hover
+p
 {
-    transition:3s;
-    opacity: 1;
-    background-color:white;
-    border:1px solid rgba(255, 255, 255, 0.2);
-    width: 10%;
+    display: block;
+    color:rgba(255,255,255,0.1);
+    opacity: 0;
+
+
+
+    width:95px;
+    height: 100%;
+    margin:0;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align:center;
-    transform:translate(0vw,0px);
-    
 
+    text-align:center;
+z-index:1;
+
+    transform: translate(-50px);
+    transition-property: all;
+    transition-duration: 1.5s;
 }
+
+
+
+p.list:hover
+{
+
+
+    display: block;
+    color:white;
+    opacity: 1;
+
+    background-color: rgba(255,255,255,0.3);
+    width:80px;
+    height: 50px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+    text-align:center;
+
+    transform: translate(50px);
+    border-radius: 0 20% 20% 0;
+}
+
+p.start:hover
+{
+
+
+    display: block;
+    color:white;
+    opacity: 1;
+
+    background-color: rgba(255,255,255,0.3);
+    width:80px;
+    height: 50px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+    text-align:center;
+
+    transform: translate(50px);
+    border-radius: 20% 20% 20% 0;
+}
+
+p.end:hover
+{
+
+
+    display: block;
+    color:white;
+    opacity: 1;
+
+    background-color: rgba(255,255,255,0.3);
+    width:80px;
+    height: 50px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+    text-align:center;
+
+    transform: translate(50px);
+    border-radius: 0 20% 20% 20%;
+}
+
+
+
+
+
 
